@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ischaemic Stroke — Stroke Hub</title>
-  <meta name="description" content="Ischaemic stroke: definition, pathophysiology, presentation, investigations, acute management including thrombolysis and thrombectomy, secondary prevention, key trials, and references.">
+  <meta name="description" content="Ischaemic stroke: definition and classification, hyperacute assessment, intravenous thrombolysis, mechanical thrombectomy, malignant MCA infarction, secondary prevention, investigation, and key trials.">
   <link rel="canonical" href="ischaemic-stroke.html">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -31,6 +31,7 @@
           <li><a href="ischaemic-stroke.html" aria-current="page">Ischaemic Stroke</a></li>
           <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
           <li><a href="tia.html">TIA</a></li>
+          <li><a href="stroke-mimics.html">Stroke Mimics</a></li>
           <li><a href="local-guidelines.html">Local Guidelines</a></li>
         </ul>
       </nav>
@@ -41,7 +42,7 @@
     <div class="container">
       <p class="breadcrumbs"><a href="index.html">Home</a> / Ischaemic Stroke</p>
       <h1>Ischaemic Stroke</h1>
-      <p class="page-subtitle">Occlusion of a cerebral artery leading to focal brain infarction — the most common stroke subtype, and a time-critical medical emergency.</p>
+      <p class="page-subtitle">Focal neurological dysfunction caused by infarction of brain, spinal cord, or retinal tissue — the most common stroke subtype (~85%), and a time-critical medical emergency.</p>
       <div class="tag-row">
         <span class="tag">~85% of strokes</span>
         <span class="tag">Time-critical</span>
@@ -54,188 +55,118 @@
     <div class="content-layout">
       <article class="page-content">
 
+        <div class="box box-note">
+          <h4>Scope of this page</h4>
+          <p style="margin-bottom:0;">This page summarises the UK National Clinical Guideline for Stroke (2023), AHA/ASA (2019/2021, updated 2026), and ESO positions, plus the major randomised trials. It is a learning aid — not a substitute for full guidelines, local protocols, the BNF, or clinical judgement. Verify all doses, time windows, and eligibility against current local and national guidance before clinical use.</p>
+        </div>
+
         <section id="definition">
           <h2>1. Definition &amp; classification</h2>
-          <p>Ischaemic stroke is a sudden focal neurological deficit caused by inadequate blood supply to a region of the brain, resulting in tissue infarction. It accounts for roughly 85% of all strokes, with the remainder being haemorrhagic (see <a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a>).</p>
-          <p>Ischaemic stroke is commonly classified using the <strong>TOAST criteria</strong> by presumed mechanism:</p>
+          <p>Ischaemic stroke is an episode of focal neurological dysfunction caused by infarction of brain, spinal cord, or retinal tissue. It accounts for roughly <strong>85% of all strokes</strong> (the remainder being haemorrhagic — see <a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a>).</p>
+          <p>Two useful classifications:</p>
           <ul>
-            <li><strong>Large-artery atherosclerosis</strong> — atherothrombosis or artery-to-artery embolism, e.g. carotid or intracranial stenosis.</li>
-            <li><strong>Cardioembolism</strong> — most commonly atrial fibrillation; also valvular disease, recent myocardial infarction, and left ventricular thrombus.</li>
-            <li><strong>Small-vessel (lacunar) disease</strong> — occlusion of a single perforating arteriole, typically related to chronic hypertension and diabetes.</li>
-            <li><strong>Stroke of other determined aetiology</strong> — e.g. dissection, vasculitis, hypercoagulable states, venous sinus thrombosis.</li>
-            <li><strong>Stroke of undetermined aetiology (cryptogenic)</strong> — no cause found despite investigation, or more than one plausible cause identified.</li>
-          </ul>
-          <p>Clinically, the <strong>Oxford (Bamford) classification</strong> is widely used at the bedside to describe the syndrome based on examination findings alone, before imaging: Total Anterior Circulation Stroke (TACS), Partial Anterior Circulation Stroke (PACS), Lacunar Stroke (LACS), and Posterior Circulation Stroke (POCS).</p>
-        </section>
-
-        <section id="pathophysiology">
-          <h2>2. Pathophysiology</h2>
-          <p>Ischaemic stroke results from a critical reduction in cerebral blood flow (CBF) below the threshold required to sustain neuronal function and, ultimately, structural integrity.</p>
-          <ul>
-            <li><strong>Ischaemic core:</strong> tissue with CBF low enough (typically &lt;10 mL/100 g/min) to cause rapid, irreversible cell death.</li>
-            <li><strong>Ischaemic penumbra:</strong> surrounding tissue that is functionally impaired but structurally viable (CBF roughly 10–20 mL/100 g/min), kept alive by collateral circulation. This is the target of reperfusion therapy — "time is brain," with an estimated 1.9 million neurons lost per minute of large-vessel occlusion left untreated.</li>
-          </ul>
-          <p>At the cellular level, energy failure leads to loss of ionic gradients, glutamate-mediated excitotoxicity, calcium influx, free radical generation, and eventually necrosis and apoptosis. Without reperfusion, the penumbra is progressively recruited into the infarct core over hours.</p>
-          <div class="box box-key-points">
-            <h4>Key concept</h4>
-            <p style="margin-bottom:0;">The entire rationale for hyperacute stroke treatment (thrombolysis and thrombectomy) is to salvage the penumbra before it becomes irreversibly infarcted — hence strict time windows and, increasingly, imaging-based selection to identify patients with salvageable tissue beyond fixed time cut-offs.</p>
-          </div>
-        </section>
-
-        <section id="risk-factors">
-          <h2>3. Risk factors</h2>
-          <table>
-            <caption>Modifiable and non-modifiable risk factors for ischaemic stroke</caption>
-            <thead>
-              <tr><th>Non-modifiable</th><th>Modifiable</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Age</td><td>Hypertension (the single largest modifiable risk factor)</td></tr>
-              <tr><td>Sex (higher lifetime risk in women)</td><td>Atrial fibrillation and other cardioembolic sources</td></tr>
-              <tr><td>Family history / genetic factors</td><td>Diabetes mellitus</td></tr>
-              <tr><td>Prior stroke or TIA</td><td>Smoking</td></tr>
-              <tr><td>Ethnicity</td><td>Dyslipidaemia</td></tr>
-              <tr><td>&nbsp;</td><td>Obesity and physical inactivity</td></tr>
-              <tr><td>&nbsp;</td><td>Excess alcohol intake</td></tr>
-              <tr><td>&nbsp;</td><td>Carotid stenosis</td></tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section id="presentation">
-          <h2>4. Clinical presentation</h2>
-          <p>Presentation depends on the vascular territory affected, but the hallmark is a <strong>sudden-onset, focal</strong> neurological deficit. Public and prehospital recognition tools include:</p>
-          <ul>
-            <li><strong>FAST</strong> — Face drooping, Arm weakness, Speech difficulty, Time to call emergency services.</li>
-            <li><strong>BE-FAST</strong> — adds Balance and Eyes (visual disturbance) to improve sensitivity for posterior circulation strokes.</li>
-            <li><strong>ROSIER scale</strong> — used in emergency departments to differentiate stroke from mimics (score &gt;0 suggests stroke is likely).</li>
-          </ul>
-
-          <h3>Common syndromes by territory</h3>
-          <table>
-            <thead><tr><th>Territory</th><th>Typical features</th></tr></thead>
-            <tbody>
-              <tr><td>Middle cerebral artery (MCA)</td><td>Contralateral face and arm &gt; leg weakness and sensory loss; homonymous hemianopia; if dominant hemisphere, aphasia; if non-dominant, neglect.</td></tr>
-              <tr><td>Anterior cerebral artery (ACA)</td><td>Contralateral leg &gt; arm weakness; abulia/personality change; gait apraxia.</td></tr>
-              <tr><td>Posterior cerebral artery (PCA)</td><td>Contralateral homonymous hemianopia (often macula-sparing); visual agnosia; may have minimal motor deficit.</td></tr>
-              <tr><td>Vertebrobasilar / posterior circulation</td><td>Vertigo, diplopia, ataxia, dysarthria, crossed sensorimotor signs, reduced consciousness; risk of locked-in syndrome with basilar occlusion.</td></tr>
-              <tr><td>Lacunar</td><td>Pure motor or pure sensory deficit, ataxic hemiparesis, or dysarthria–clumsy hand syndrome, without cortical signs (no aphasia, neglect, or visual field loss).</td></tr>
-            </tbody>
-          </table>
-
-          <div class="box">
-            <h4>Standardised severity assessment</h4>
-            <p style="margin-bottom:0;">The <strong>NIH Stroke Scale (NIHSS)</strong> is the standard tool for quantifying deficit severity (0–42), guiding treatment decisions, and tracking change over time.</p>
-          </div>
-        </section>
-
-        <section id="investigations">
-          <h2>5. Investigations</h2>
-          <h3>Immediate (hyperacute)</h3>
-          <ul>
-            <li><strong>Non-contrast CT head</strong> — first-line to exclude haemorrhage; early ischaemic changes may be subtle (loss of grey-white differentiation, sulcal effacement, hyperdense artery sign).</li>
-            <li><strong>CT angiography (CTA)</strong> head and neck — identifies large-vessel occlusion (LVO) amenable to thrombectomy.</li>
-            <li><strong>CT perfusion (CTP)</strong> or MR diffusion/perfusion imaging — estimates core-vs-penumbra mismatch, particularly useful for extended-window thrombectomy decisions (see DAWN and DEFUSE-3 below).</li>
-            <li>Capillary glucose (hypoglycaemia is an important stroke mimic), ECG, and baseline bloods (full blood count, coagulation, renal function).</li>
-          </ul>
-          <h3>Subsequent work-up (aetiology)</h3>
-          <ul>
-            <li>Carotid Doppler ultrasound or CTA/MRA to assess for extracranial carotid stenosis.</li>
-            <li>12-lead ECG and prolonged cardiac (Holter) monitoring to detect paroxysmal atrial fibrillation.</li>
-            <li>Echocardiography (transthoracic ± transoesophageal) if a cardioembolic source is suspected, particularly in cryptogenic stroke or younger patients.</li>
-            <li>Fasting lipid profile and HbA1c for vascular risk factor assessment.</li>
-            <li>MRI brain with diffusion-weighted imaging (DWI) — more sensitive than CT for confirming and localising acute infarction.</li>
-            <li>Thrombophilia and vasculitis screen, or vessel-wall imaging, selectively in younger patients or where dissection/vasculitis is suspected.</li>
+            <li><strong>Bamford / Oxford (clinical):</strong> TACI (total anterior circulation infarct), PACI (partial anterior circulation infarct), LACI (lacunar infarct), POCI (posterior circulation infarct). Useful at the bedside for territory and prognosis.</li>
+            <li><strong>TOAST (aetiological):</strong> large-artery atherosclerosis, cardioembolism, small-vessel occlusion (lacunar), stroke of other determined aetiology, and stroke of undetermined aetiology (cryptogenic). Drives secondary-prevention strategy.</li>
           </ul>
         </section>
 
-        <section id="management">
-          <h2>6. Management</h2>
+        <section id="assessment">
+          <h2>2. Hyperacute assessment</h2>
+          <ul>
+            <li>Rapid recognition (<strong>FAST</strong>), airway/breathing/circulation, glucose.</li>
+            <li>Immediate <strong>non-contrast CT head</strong> to exclude haemorrhage; <strong>CT angiography</strong> to identify large-vessel occlusion (LVO); <strong>CT perfusion or MRI</strong> for extended-window selection.</li>
+            <li>Determine time of onset (or last-known-well), NIHSS, pre-morbid function (mRS), and treatment eligibility.</li>
+          </ul>
+        </section>
 
-          <h3>6.1 Hyperacute reperfusion therapy</h3>
-          <p><strong>Intravenous thrombolysis</strong> with alteplase (or, increasingly, tenecteplase) is indicated within <strong>4.5 hours</strong> of clearly defined symptom onset (or last known well) in eligible patients without contraindications such as recent surgery, active bleeding, anticoagulation above threshold, or haemorrhage on CT. Some services now use perfusion-imaging selection to extend treatment to wake-up strokes or unknown-onset strokes.</p>
-          <p><strong>Mechanical thrombectomy</strong> is indicated for confirmed large-vessel occlusion (typically internal carotid or proximal MCA, M1/M2) and can be performed up to <strong>24 hours</strong> from last known well in carefully selected patients using perfusion/collateral imaging criteria (see DAWN and DEFUSE-3). Thrombectomy is complementary to, not a replacement for, thrombolysis where both are indicated ("bridging therapy").</p>
-
+        <section id="thrombolysis">
+          <h2>3. Intravenous thrombolysis</h2>
+          <ul>
+            <li><strong>Alteplase 0.9 mg/kg within 4.5 hours</strong> of known onset remains standard in many centres (NINDS 1995; ECASS III for 3–4.5 h).</li>
+            <li><strong>Tenecteplase 0.25 mg/kg</strong> is increasingly preferred as a single bolus and is supported by trials such as AcT and EXTEND-IA TNK; it is now recommended in several updated guidelines.</li>
+            <li><strong>Extended / unknown-onset window:</strong> patients with wake-up stroke or unknown onset may be eligible using imaging mismatch — WAKE-UP (MRI DWI–FLAIR mismatch) and EXTEND (perfusion mismatch up to 9 h).</li>
+          </ul>
           <div class="box box-red-flag">
-            <h4>Red flags / contraindications to thrombolysis</h4>
-            <p style="margin-bottom:0;">Absolute contraindications include intracranial haemorrhage on imaging, active internal bleeding, recent major surgery or head trauma, and severe uncontrolled hypertension. Always follow your local thrombolysis protocol and checklist — see <a href="local-guidelines.html">Local Guidelines</a>.</p>
+            <h4>Screen carefully for contraindications</h4>
+            <p style="margin-bottom:0;">Recent haemorrhage, surgery, coagulopathy, uncontrolled hypertension. Thrombolysis does <strong>not</strong> replace thrombectomy where an LVO is present — give both where indicated ("drip and ship" / "mothership"). Always follow your local thrombolysis protocol — see <a href="local-guidelines.html">Local Guidelines</a>.</p>
           </div>
+        </section>
 
-          <h3>6.2 Acute supportive care</h3>
+        <section id="thrombectomy">
+          <h2>4. Mechanical thrombectomy (endovascular therapy, EVT)</h2>
+          <p>The single biggest advance in acute stroke care. Indicated for large-vessel occlusion (typically ICA, M1, and selected M2, plus basilar). Only about <strong>7–10% of ischaemic strokes are eligible.</strong></p>
+
+          <h3>4.1 Early window (0–6 hours, anterior circulation)</h3>
+          <p>Standard of care for proximal anterior LVO. Evidence base: the <strong>HERMES</strong> pooled analysis (2016) of five 2015 trials — MR CLEAN, ESCAPE, EXTEND-IA, SWIFT PRIME, REVASCAT.</p>
+
+          <h3>4.2 Extended window (6–24 hours, anterior circulation)</h3>
+          <p>Selection is imaging-based, not time-based, and requires advanced imaging (CT perfusion or DWI/perfusion MRI):</p>
           <ul>
-            <li>Admission to a specialist stroke unit — consistently shown to reduce death and disability regardless of stroke severity.</li>
-            <li>Maintain normoglycaemia, normothermia, and adequate oxygenation; avoid aggressive blood pressure lowering in the acute non-thrombolysed patient unless extreme (permissive hypertension supports penumbral perfusion) — different thresholds apply if thrombolysis is given.</li>
-            <li>Early swallow screening before oral intake to reduce aspiration risk.</li>
-            <li>Antiplatelet therapy (typically aspirin 300 mg) started at 24 hours post-thrombolysis, or immediately if thrombolysis/thrombectomy is not given, once haemorrhage is excluded.</li>
-            <li>VTE prophylaxis per local protocol; early mobilisation and multidisciplinary rehabilitation (physiotherapy, occupational therapy, speech and language therapy).</li>
-            <li>Decompressive hemicraniectomy may be considered in selected patients under 60 with malignant MCA infarction and life-threatening oedema.</li>
+            <li><strong>DAWN</strong> (2018): 6–24 h, clinical–core mismatch.</li>
+            <li><strong>DEFUSE-3</strong> (2018): 6–16 h, perfusion–core mismatch.</li>
           </ul>
 
-          <h3>6.3 Secondary prevention</h3>
+          <h3>4.3 Large ischaemic core</h3>
+          <p>A wave of 2022–2024 trials showed benefit even with large established cores (low ASPECTS 3–5):</p>
           <ul>
-            <li><strong>Antiplatelet/anticoagulant therapy:</strong> long-term antiplatelet (e.g. clopidogrel monotherapy) for non-cardioembolic stroke; anticoagulation for atrial fibrillation or other cardioembolic sources, usually started days after the event depending on infarct size and haemorrhagic transformation risk.</li>
-            <li><strong>High-intensity statin therapy</strong> regardless of baseline LDL, per current secondary prevention guidance.</li>
-            <li><strong>Blood pressure control</strong> to target once the acute phase has passed.</li>
-            <li><strong>Carotid revascularisation</strong> (endarterectomy or stenting) for symptomatic significant carotid stenosis, ideally within two weeks of the event.</li>
-            <li><strong>Lifestyle measures:</strong> smoking cessation, glycaemic control, weight management, alcohol moderation, and structured exercise.</li>
+            <li>RESCUE-Japan LIMIT (2022), SELECT2 (2023), ANGEL-ASPECT (2023), TENSION (2023), plus TESLA and LASTE.</li>
+            <li>Benefit in very extensive core (ASPECTS 0–2) remains limited/uncertain.</li>
+          </ul>
+
+          <h3>4.4 Posterior circulation / basilar artery occlusion</h3>
+          <p>Basilar occlusion is catastrophic if untreated. After earlier neutral trials (BEST, BASICS), two positive trials changed practice:</p>
+          <ul>
+            <li><strong>ATTENTION</strong> (2022): within 12 h.</li>
+            <li><strong>BAOCHE</strong> (2023): 6–24 h.</li>
+          </ul>
+          <p>Vertebrobasilar imaging (CTA/MRA) should be part of the acute LVO assessment, and posterior-circulation LVO warrants active consideration for EVT, sometimes in extended windows given the poor natural history.</p>
+
+          <h3>4.5 Distal / medium-vessel occlusion (MeVO)</h3>
+          <p>An active research area. Recent randomised trials (e.g. ESCAPE-MeVO, DISTAL, presented 2024–2025) have not shown clear benefit of EVT for medium/distal-vessel occlusions, so routine thrombectomy for MeVO is not established — decisions are individualised.</p>
+        </section>
+
+        <section id="malignant-mca">
+          <h2>5. Malignant MCA infarction &amp; decompressive hemicraniectomy</h2>
+          <p>A large MCA-territory infarct can cause life-threatening cytotoxic oedema ("malignant" MCA syndrome), usually within 2–5 days, with very high mortality under medical management alone.</p>
+          <p><strong>Evidence:</strong></p>
+          <ul>
+            <li>Pooled analysis of <strong>DECIMAL, DESTINY and HAMLET</strong> (patients ≤ 60, surgery within 48 h): decompressive hemicraniectomy markedly reduced mortality and increased survival with mRS ≤ 4 and ≤ 3 (numbers-needed-to-treat as low as ~2 for survival).</li>
+            <li><strong>DESTINY II</strong> (patients &gt; 60): reduced mortality, but most survivors have moderate-to-severe disability — so decisions require careful discussion of acceptable outcomes.</li>
+          </ul>
+          <p><strong>Typical selection features:</strong> large MCA-territory infarct (≥ 50% of territory / ≥ 2/3 on imaging), high NIHSS, declining consciousness, and ability to operate early (within ~48 h). Involve neurosurgery early and have the goals-of-care conversation with family.</p>
+          <div class="box box-note">
+            <p style="margin-bottom:0;">Cerebellar (posterior fossa) infarction with brainstem compression or obstructive hydrocephalus is a separate neurosurgical emergency.</p>
+          </div>
+        </section>
+
+        <section id="secondary-prevention">
+          <h2>6. Secondary prevention</h2>
+          <p>The antiplatelet, lipid, blood-pressure, and atrial-fibrillation strategies for ischaemic stroke are the same as for TIA — see the <a href="tia.html">TIA page</a> for the full detail. In brief:</p>
+          <ul>
+            <li><strong>Antiplatelets:</strong> short-course DAPT (clopidogrel + aspirin 21 days → clopidogrel) for minor stroke (NIHSS ≤ 3) or high-risk TIA; long-term clopidogrel monotherapy. Anticoagulate if AF.</li>
+            <li><strong>Lipids:</strong> high-intensity statin (e.g. atorvastatin 80 mg) treat-to-target (UK non-HDL &lt; 2.5 / LDL &lt; 1.8 mmol/L; ESC LDL &lt; 1.4); escalate with ezetimibe, then PCSK9 inhibitors / inclisiran / bempedoic acid.</li>
+            <li><strong>Blood pressure:</strong> optimise once stable.</li>
+            <li><strong>Carotid disease:</strong> symptomatic significant carotid stenosis (anterior-circulation events) should be assessed urgently for carotid endarterectomy or stenting, ideally within 2 weeks.</li>
           </ul>
         </section>
 
-        <section id="trials">
-          <h2>7. Key trials &amp; latest studies</h2>
-          <p>Selected landmark and contemporary trials that shaped current practice. This list is illustrative for learning purposes — always check for more recent evidence and your local guidance.</p>
-
-          <div class="study-card">
-            <h4>NINDS rt-PA Stroke Study <span class="study-year">1995</span></h4>
-            <p>Established intravenous alteplase within 3 hours of onset as effective in improving functional outcome at 3 months, forming the original basis for thrombolysis in acute ischaemic stroke.</p>
-          </div>
-
-          <div class="study-card">
-            <h4>ECASS III <span class="study-year">2008</span></h4>
-            <p>Extended the evidence base for intravenous alteplase to the 3–4.5 hour window in selected patients, subsequently adopted into most international guidelines.</p>
-          </div>
-
-          <div class="study-card">
-            <h4>MR CLEAN, ESCAPE, SWIFT PRIME, EXTEND-IA, REVASCAT <span class="study-year">2015</span></h4>
-            <p>This series of trials established mechanical thrombectomy as standard of care for large-vessel occlusion within roughly 6 hours of onset, dramatically improving functional independence compared with medical therapy alone.</p>
-          </div>
-
-          <div class="study-card">
-            <h4>DAWN <span class="study-year">2018</span></h4>
-            <p>Showed benefit of thrombectomy 6–24 hours after last known well in patients selected using a clinical-imaging mismatch (clinical deficit severity out of proportion to infarct core size), extending the treatment window substantially.</p>
-          </div>
-
-          <div class="study-card">
-            <h4>DEFUSE-3 <span class="study-year">2018</span></h4>
-            <p>Demonstrated benefit of thrombectomy in the 6–16 hour window using perfusion-imaging-based core/penumbra mismatch criteria, reinforcing imaging-guided rather than purely time-based patient selection.</p>
-          </div>
-
-          <div class="study-card">
-            <h4>Tenecteplase trials (e.g. EXTEND-IA TNK, AcT) <span class="study-year">2018–2022</span></h4>
-            <p>Growing evidence supports tenecteplase as a non-inferior, single-bolus alternative to alteplase, with several stroke networks transitioning to tenecteplase as their default thrombolytic.</p>
-          </div>
-
-          <div class="box box-note">
-            <h4>Staying current</h4>
-            <p style="margin-bottom:0;">Stroke medicine evolves quickly. For up-to-date guidance, cross-check this summary against your national/professional body (e.g. NICE, AHA/ASA, ESO) and recent publications in journals such as <em>Stroke</em>, <em>The Lancet Neurology</em>, and <em>NEJM</em>.</p>
-          </div>
+        <section id="investigating">
+          <h2>7. Investigating the cause (including young / cryptogenic stroke)</h2>
+          <p><strong>Standard:</strong> MRI + MRA head and neck, carotid Doppler, ECG and prolonged cardiac monitoring (for paroxysmal AF), echocardiography (TTE ± transoesophageal for PFO / endocarditis / thrombus), and vascular risk bloods.</p>
+          <p>See the <a href="tia.html#investigating">TIA page</a> for the young-stroke workup, the role and timing of catheter angiography (including posterior-circulation events), thrombophilia/antiphospholipid testing, and the sickle cell pathway.</p>
         </section>
 
         <section id="references">
-          <h2>8. References</h2>
+          <h2>8. References (key trials)</h2>
           <ol class="reference-list">
-            <li>National Institute for Health and Care Excellence (NICE). <em>Stroke and transient ischaemic attack in over 16s: diagnosis and initial management</em>. NG128.</li>
-            <li>Powers WJ, et al. 2019 Guidelines for the Early Management of Patients With Acute Ischemic Stroke. <em>Stroke</em>. American Heart Association/American Stroke Association.</li>
-            <li>National Institute of Neurological Disorders and Stroke rt-PA Stroke Study Group. Tissue Plasminogen Activator for Acute Ischemic Stroke. <em>N Engl J Med</em>. 1995.</li>
-            <li>Hacke W, et al. Thrombolysis with Alteplase 3 to 4.5 Hours after Acute Ischemic Stroke (ECASS III). <em>N Engl J Med</em>. 2008.</li>
-            <li>Goyal M, et al. Randomized Assessment of Rapid Endovascular Treatment of Ischemic Stroke (ESCAPE). <em>N Engl J Med</em>. 2015.</li>
-            <li>Nogueira RG, et al. Thrombectomy 6 to 24 Hours after Stroke with a Mismatch between Deficit and Infarct (DAWN). <em>N Engl J Med</em>. 2018.</li>
-            <li>Albers GW, et al. Thrombectomy for Stroke at 6 to 16 Hours with Selection by Perfusion Imaging (DEFUSE 3). <em>N Engl J Med</em>. 2018.</li>
-            <li>European Stroke Organisation (ESO) guidelines on management of acute ischaemic stroke.</li>
-            <li>Adams HP, et al. Classification of subtype of acute ischemic stroke (TOAST). <em>Stroke</em>. 1993.</li>
-            <li>Bamford J, et al. Classification and natural history of clinically identifiable subtypes of cerebral infarction. <em>Lancet</em>. 1991.</li>
+            <li>Goyal M, et al. HERMES collaboration pooled analysis. <em>Lancet</em>. 2016 (MR CLEAN, ESCAPE, EXTEND-IA, SWIFT PRIME, REVASCAT).</li>
+            <li>Nogueira RG, et al. DAWN. <em>N Engl J Med</em>. 2018; Albers GW, et al. DEFUSE-3. <em>N Engl J Med</em>. 2018.</li>
+            <li>Yoshimura S, et al. RESCUE-Japan LIMIT. <em>N Engl J Med</em>. 2022; Sarraj A, et al. SELECT2. <em>N Engl J Med</em>. 2023; Huo X, et al. ANGEL-ASPECT. <em>N Engl J Med</em>. 2023; Bendszus M, et al. TENSION. <em>Lancet</em>. 2023.</li>
+            <li>Tao C, et al. ATTENTION. <em>N Engl J Med</em>. 2022; Jovin TG, et al. BAOCHE. <em>N Engl J Med</em>. 2022/2023.</li>
+            <li>NINDS. <em>N Engl J Med</em>. 1995; Hacke W, et al. ECASS III. <em>N Engl J Med</em>. 2008; Thomalla G, et al. WAKE-UP. <em>N Engl J Med</em>. 2018; Ma H, et al. EXTEND. <em>N Engl J Med</em>. 2019; Campbell BCV, et al. EXTEND-IA TNK. <em>N Engl J Med</em>. 2018; Menon BK, et al. AcT. <em>Lancet</em>. 2022.</li>
+            <li>Vahedi K, et al. DECIMAL / DESTINY / HAMLET pooled analysis. <em>Lancet Neurology</em>. 2007; Jüttler E, et al. DESTINY II. <em>N Engl J Med</em>. 2014.</li>
           </ol>
-          <p class="page-meta">This page is a teaching summary, not a clinical protocol. Always verify against current guidelines and your institution's stroke pathway before applying to patient care.</p>
+          <p class="page-meta">This page is a teaching summary, not a clinical protocol. Verify all recommendations against current UK/local guidance before clinical use. Trial eligibility criteria are specific and should be checked against the source publications.</p>
         </section>
 
       </article>
@@ -245,12 +176,12 @@
           <summary>On this page</summary>
           <ol>
             <li><a href="#definition">Definition &amp; classification</a></li>
-            <li><a href="#pathophysiology">Pathophysiology</a></li>
-            <li><a href="#risk-factors">Risk factors</a></li>
-            <li><a href="#presentation">Clinical presentation</a></li>
-            <li><a href="#investigations">Investigations</a></li>
-            <li><a href="#management">Management</a></li>
-            <li><a href="#trials">Key trials &amp; latest studies</a></li>
+            <li><a href="#assessment">Hyperacute assessment</a></li>
+            <li><a href="#thrombolysis">Intravenous thrombolysis</a></li>
+            <li><a href="#thrombectomy">Mechanical thrombectomy</a></li>
+            <li><a href="#malignant-mca">Malignant MCA infarction</a></li>
+            <li><a href="#secondary-prevention">Secondary prevention</a></li>
+            <li><a href="#investigating">Investigating the cause</a></li>
             <li><a href="#references">References</a></li>
           </ol>
         </details>
@@ -270,6 +201,7 @@
             <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
             <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
             <li><a href="tia.html">TIA</a></li>
+            <li><a href="stroke-mimics.html">Stroke Mimics</a></li>
             <li><a href="local-guidelines.html">Local Guidelines</a></li>
           </ul>
         </div>
