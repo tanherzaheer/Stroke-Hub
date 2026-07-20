@@ -73,4 +73,44 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
+
+  // Mermaid diagrams — loaded on demand only on pages that use them.
+  // Supports <pre class="mermaid"> and markdown-style ```mermaid fenced
+  // blocks rendered as <pre><code class="language-mermaid">. Progressive
+  // enhancement: with JS or the CDN unavailable, the raw flowchart text
+  // remains readable in place.
+  var mermaidNodes = document.querySelectorAll(
+    ".mermaid, pre > code.language-mermaid"
+  );
+  if (mermaidNodes.length) {
+    var blocks = [];
+    mermaidNodes.forEach(function (node) {
+      if (node.tagName === "CODE") {
+        // Promote a fenced code block to a bare .mermaid container so the
+        // library can replace it with an SVG diagram.
+        var pre = node.parentNode;
+        var holder = document.createElement("pre");
+        holder.className = "mermaid";
+        holder.textContent = node.textContent;
+        pre.parentNode.replaceChild(holder, pre);
+        blocks.push(holder);
+      } else {
+        blocks.push(node);
+      }
+    });
+
+    import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs")
+      .then(function (mod) {
+        var mermaid = mod.default;
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: "neutral",
+          securityLevel: "strict"
+        });
+        return mermaid.run({ nodes: blocks });
+      })
+      .catch(function () {
+        /* CDN blocked or offline: leave the raw flowchart text visible. */
+      });
+  }
 })();

@@ -1,6 +1,6 @@
 # Stroke Hub
 
-Stroke Hub is a static educational website about stroke medicine for healthcare professionals — medical students, doctors, nurses, and allied health staff. It covers ischaemic stroke, haemorrhagic stroke, and TIA, with a placeholder page for local/departmental guidelines.
+Stroke Hub is a static educational website about stroke medicine for healthcare professionals — medical students, doctors, nurses, and allied health staff. It covers ischaemic stroke, haemorrhagic stroke, TIA, and stroke mimics &amp; chameleons, with a placeholder page for local/departmental guidelines.
 
 Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no frameworks, no build step.
 
@@ -14,11 +14,12 @@ Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no fram
 ├── ischaemic-stroke.html      # Ischaemic stroke topic page
 ├── haemorrhagic-stroke.html   # Haemorrhagic stroke topic page
 ├── tia.html                   # TIA topic page
+├── stroke-mimics.html         # Stroke mimics & chameleons (includes a Mermaid flowchart)
 ├── local-guidelines.html      # Placeholder for local/trust-specific protocols
 ├── 404.html                   # Custom not-found page
 ├── assets/
 │   ├── css/style.css          # Shared stylesheet
-│   └── js/main.js             # Shared JS (mobile nav, back-to-top, TOC scrollspy)
+│   └── js/main.js             # Shared JS (mobile nav, back-to-top, TOC scrollspy, on-demand Mermaid)
 └── .github/workflows/deploy.yml  # GitHub Pages deployment workflow
 ```
 
