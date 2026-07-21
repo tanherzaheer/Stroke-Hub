@@ -800,3 +800,74 @@ li {
     display: none;
   }
 }
+
+/* =========================
+   Local guidelines — downloadable resource lists
+   ========================= */
+
+.resource-group {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.resource-group h3 {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.resource-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.resource-list li {
+  margin: 0;
+}
+
+.resource-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+  border-color: var(--color-primary);
+  box-shadow: 0 3px 12px rgba(11, 79, 108, 0.12);
+  transform: translateY(-1px);
+}
+
+.resource-icon {
+  flex: none;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.resource-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.resource-title {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.resource-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
