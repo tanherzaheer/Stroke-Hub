@@ -726,6 +726,47 @@ li {
 }
 
 /* =========================
+   Homepage section intro
+   ========================= */
+
+.section-intro {
+  padding: 2rem 0 0.5rem;
+  max-width: var(--content-width);
+  color: var(--color-text-muted);
+}
+
+.section-intro p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   Mermaid algorithm diagrams
+   ========================= */
+
+.mermaid-figure {
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.25rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+.mermaid-figure .mermaid {
+  min-width: 0;
+  text-align: center;
+}
+
+/* Keep pre-render source hidden/tidy until Mermaid swaps in the SVG */
+.mermaid:not([data-processed="true"]) {
+  color: var(--color-text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+}
+
+/* =========================
    Responsive breakpoints
    ========================= */
 
@@ -748,12 +789,16 @@ li {
 
   .main-nav {
     display: block;
-    width: auto;
+    flex: 1;
+    min-width: 0;
+    margin-left: 1.5rem;
   }
 
   .main-nav ul {
     display: flex;
-    gap: 1.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem 1rem;
     padding: 0;
   }
 
@@ -761,6 +806,8 @@ li {
     border-bottom: none;
     padding: 0.4rem 0.1rem;
     position: relative;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 
   .main-nav a[aria-current="page"]::after {
