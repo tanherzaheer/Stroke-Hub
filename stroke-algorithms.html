@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroke Algorithms — Stroke Hub</title>
+  <meta name="description" content="Stroke Algorithms: interactive Mermaid decision maps for young/cryptogenic stroke workup, sickle cell pathways, mechanical thrombectomy eligibility, malignant MCA hemicraniectomy, and intracerebral haemorrhage surgery.">
+  <link rel="canonical" href="stroke-algorithms.html">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SH</span>
+        <span>
+          <span class="brand-text">Stroke Hub</span><br>
+          <span class="brand-tagline">Stroke medicine, explained</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        Menu
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stroke-mimics.html" title="Stroke Mimics and Chameleons">Mimics</a></li>
+          <li><a href="posterior-circulation.html" title="Posterior Circulation Stroke">Posterior</a></li>
+          <li><a href="tia.html" title="Transient Ischaemic Attack (TIA)">TIA</a></li>
+          <li><a href="ischaemic-stroke.html" title="Ischaemic Stroke">Ischaemic</a></li>
+          <li><a href="carotid-stenosis.html" title="Carotid Stenosis">Carotid</a></li>
+          <li><a href="haemorrhagic-stroke.html" title="Haemorrhagic Stroke (ICH)">ICH</a></li>
+          <li><a href="subarachnoid-haemorrhage.html" title="Subarachnoid Haemorrhage">SAH</a></li>
+          <li><a href="cvst.html" title="Cerebral Venous Sinus Thrombosis">CVST</a></li>
+          <li><a href="stroke-in-pregnancy.html" title="Stroke in Pregnancy">Pregnancy</a></li>
+          <li><a href="stroke-in-the-young.html" title="Stroke in the Young">Young</a></li>
+          <li><a href="atrial-fibrillation-anticoagulation.html" title="Atrial Fibrillation and Anticoagulation">AF</a></li>
+          <li><a href="rehabilitation-complications.html" title="Rehabilitation and Complications">Rehab</a></li>
+          <li><a href="stroke-algorithms.html" aria-current="page" title="Stroke Algorithms">Algorithms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="breadcrumbs"><a href="index.html">Home</a> / Stroke Algorithms</p>
+      <h1>Stroke Algorithms and Decision Maps</h1>
+      <p class="page-subtitle">Visual, evidence-based decision maps — young/cryptogenic workup, the sickle cell pathway, thrombectomy eligibility, hemicraniectomy, and ICH surgery — rendered as flowcharts you can follow branch by branch.</p>
+      <div class="tag-row">
+        <span class="tag">Decision support</span>
+        <span class="tag">Mermaid flowcharts</span>
+        <span class="tag">Teaching tools</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="content-layout">
+      <article class="page-content">
+
+        <div class="box box-red-flag">
+          <h4>How to use these maps</h4>
+          <p style="margin-bottom:0;">These flowcharts summarise a reasonable evidence-based approach but simplify complex decisions. They do not replace senior/specialist review, local protocols, or clinical judgement. Every branch assumes appropriate imaging, exclusion of contraindications, and MDT input where relevant.</p>
+        </div>
+
+        <section id="young">
+          <h2>1. Young / cryptogenic TIA or ischaemic stroke — investigation pathway</h2>
+          <p>Covers a patient under roughly 55 with TIA or ischaemic stroke, from the immediate antiplatelet decision through cause-finding — including the role and timing of catheter angiography and posterior-circulation nuances.</p>
+          <figure class="mermaid-figure">
+            <div class="mermaid">
+flowchart TD
+    A["Young patient with TIA or ischaemic stroke"] --> B["Immediate: CT to exclude haemorrhage; assess thrombolysis/thrombectomy eligibility if acute"]
+    B --> C{"Haemorrhage excluded and not for acute reperfusion?"}
+    C -->|Yes| D["Start antiplatelet: aspirin 300 mg now. If minor stroke NIHSS 3 or less, or high-risk TIA: short-course DAPT then clopidogrel"]
+    C -->|No| E["Manage per acute reperfusion / haemorrhage pathway"]
+    D --> F["MRI brain plus MRA head and neck"]
+    F --> G["Vessel imaging of BOTH anterior and posterior circulation"]
+    G --> H{"Anterior or posterior circulation event?"}
+    H -->|Anterior| I["Carotid Doppler / CTA neck: assess for carotid stenosis"]
+    H -->|Posterior| J["Image vertebrobasilar system carefully: dissection is a common cause in the young"]
+    I --> K["Cardiac workup"]
+    J --> K
+    K --> L["12-lead ECG plus PROLONGED ambulatory monitoring for paroxysmal AF"]
+    L --> M["Echocardiogram: TTE, add transoesophageal echo if PFO / endocarditis / cardiac source suspected"]
+    M --> N["Targeted bloods: glucose/HbA1c, lipids, ESR/CRP, autoimmune and vasculitis screen if indicated, toxicology if indicated"]
+    N --> O{"Cause identified?"}
+    O -->|Yes| P["Treat cause and tailor secondary prevention"]
+    O -->|No - cryptogenic| Q["Consider: bubble study for PFO; antiphospholipid antibodies (confirm 12 weeks apart); haemoglobinopathy screen; rare causes (Fabry, CADASIL, RCVS, vasculitis)"]
+    Q --> R{"Non-invasive imaging suggests vasculitis, vasculopathy, unexplained dissection, aneurysm or AVM?"}
+    R -->|Yes| S["Catheter angiography (DSA): gold standard for small-vessel vasculitis, subtle dissection, and vascular malformations"]
+    R -->|No| T["MDT review; consider PFO closure in selected patients; document as cryptogenic / ESUS and optimise prevention"]
+    S --> P
+          </div>
+          </figure>
+          <div class="box box-note">
+            <h4>Notes on catheter angiography (DSA)</h4>
+            <p>Non-invasive imaging (CTA/MRA) is first line. DSA is reserved for when non-invasive imaging is inconclusive but the clinical picture suggests primary CNS vasculitis, subtle arterial dissection, vascular malformation (AVM/fistula), or aneurysm.</p>
+            <p style="margin-bottom:0;"><strong>Posterior circulation — do not under-investigate.</strong> Vertebral artery dissection is a leading cause of posterior-circulation stroke in younger patients, and vertebrobasilar anatomy can be harder to assess non-invasively — a low threshold for dedicated vessel imaging (and DSA if unresolved) is appropriate.</p>
+          </div>
+        </section>
+
+        <section id="sickle-cell">
+          <h2>2. Sickle cell disease and stroke — acute and preventive pathway</h2>
+          <p>Key trials: <strong>STOP</strong> (chronic transfusion cuts first-stroke risk in children with abnormal TCD by ~90%), <strong>STOP2</strong> (do not discontinue transfusion — risk returns), <strong>TWiTCH</strong> (hydroxycarbamide non-inferior to transfusion for lowering TCD velocities in selected children), and the <strong>ASH 2020 guidelines</strong> (exchange transfusion for acute neurological events).</p>
+          <figure class="mermaid-figure">
+            <div class="mermaid">
+flowchart TD
+    A["Patient with sickle cell disease and acute neurological deficit (stroke or TIA)"] --> B["Urgent imaging: CT then MRI/MRA. Involve haematology + neurology immediately"]
+    B --> C{"Ischaemic or haemorrhagic?"}
+    C -->|Ischaemic| D["URGENT red cell EXCHANGE transfusion, target HbS below 30%, aim Hb around 10 g/dL, avoid hyperviscosity"]
+    C -->|Haemorrhagic| E["Neurosurgical + haematology MDT; transfusion role less well defined"]
+    D --> F{"Exchange transfusion available within 2 hours?"}
+    F -->|"No, and Hb 8.5 or less"| G["Give simple transfusion to avoid delay while arranging exchange/apheresis"]
+    F -->|Yes| H["Proceed with exchange / automated apheresis"]
+    G --> H
+    H --> I["Secondary prevention: indefinite chronic transfusion, keep HbS below 30% and Hb above 9 g/dL"]
+    I --> J["Screen for moyamoya vasculopathy; MDT re revascularisation in selected cases"]
+    K["Child with sickle cell (primary prevention)"] --> L["Transcranial Doppler screening"]
+    L --> M{"TCD velocity 200 cm/s or above (abnormal)?"}
+    M -->|Yes| N["Start chronic transfusion to reduce first-stroke risk (STOP). Do NOT simply stop later (STOP2)"]
+    M -->|No| O["Continue routine surveillance"]
+    N --> P["May transition to hydroxycarbamide in selected children once stable (TWiTCH)"]
+          </div>
+          </figure>
+        </section>
+
+        <section id="thrombectomy">
+          <h2>3. Mechanical thrombectomy — eligibility map</h2>
+          <p>From confirmation of large-vessel occlusion through time windows, imaging mismatch, and large-core selection.</p>
+          <figure class="mermaid-figure">
+            <div class="mermaid">
+flowchart TD
+    A["Acute ischaemic stroke with disabling deficit"] --> B["CT + CT angiography (and CT perfusion if extended window)"]
+    B --> C{"Large-vessel occlusion present? (ICA, M1, selected M2, or basilar)"}
+    C -->|No| D["Thrombectomy not indicated. Give IV thrombolysis if eligible"]
+    C -->|Yes| E["Give IV thrombolysis if eligible (do not delay transfer)"]
+    E --> F{"Time from last-known-well?"}
+    F -->|"0 to 6 hours (anterior)"| G["Thrombectomy: standard of care (HERMES / 2015 trials)"]
+    F -->|"6 to 24 hours (anterior)"| H{"Favourable imaging mismatch on CTP or DWI/perfusion?"}
+    H -->|Yes| I["Thrombectomy (DAWN / DEFUSE-3)"]
+    H -->|No| J["Individualise; benefit less certain"]
+    F -->|"Basilar occlusion"| K["Consider thrombectomy up to 24 hours (ATTENTION / BAOCHE); poor natural history justifies active approach"]
+    G --> L{"Large established core (low ASPECTS 3 to 5)?"}
+    I --> L
+    L -->|Yes| M["Still consider thrombectomy (SELECT2, ANGEL-ASPECT, TENSION, RESCUE-Japan LIMIT). Benefit limited if ASPECTS 0 to 2"]
+    L -->|No| N["Proceed with thrombectomy"]
+    K --> N
+    M --> N
+    N --> O["Post-procedure: HASU/ICU care, BP control, monitor for reperfusion injury and haemorrhage"]
+          </div>
+          </figure>
+          <div class="box box-note">
+            <p style="margin-bottom:0;"><strong>Distal / medium-vessel occlusion:</strong> routine thrombectomy is not established (recent MeVO trials such as ESCAPE-MeVO and DISTAL did not show clear benefit) — individualise.</p>
+          </div>
+        </section>
+
+        <section id="hemicraniectomy">
+          <h2>4. Malignant MCA infarction — decompressive hemicraniectomy</h2>
+          <p>Selecting patients with a large MCA-territory infarct for decompressive surgery, and how age shapes the expected benefit.</p>
+          <figure class="mermaid-figure">
+            <div class="mermaid">
+flowchart TD
+    A["Large MCA-territory infarct"] --> B{"Signs of malignant course? (large infarct 50% or more of MCA territory, high NIHSS, declining consciousness, midline shift)"}
+    B -->|No| C["Continue HASU care and monitor closely"]
+    B -->|Yes| D["Urgent neurosurgical referral and family goals-of-care discussion"]
+    D --> E{"Age 60 or under?"}
+    E -->|Yes| F["Decompressive hemicraniectomy within 48 hours: reduces mortality AND improves functional outcome (DECIMAL, DESTINY, HAMLET pooled)"]
+    E -->|Over 60| G["Hemicraniectomy reduces mortality but most survivors have moderate-to-severe disability (DESTINY II): individualised, shared decision"]
+    F --> H["Post-op neurocritical care; delayed cranioplasty"]
+    G --> H
+          </div>
+          </figure>
+          <div class="box box-note">
+            <p style="margin-bottom:0;"><strong>Cerebellar infarction</strong> with brainstem compression or hydrocephalus is a separate emergency — suboccipital decompression &plusmn; EVD; escalate to neurosurgery urgently.</p>
+          </div>
+        </section>
+
+        <section id="ich">
+          <h2>5. Intracerebral haemorrhage (ICH) — acute management and surgery</h2>
+          <p>The acute medical bundle, anticoagulant reversal by agent, and location-based surgical decisions.</p>
+          <figure class="mermaid-figure">
+            <div class="mermaid">
+flowchart TD
+    A["Spontaneous intracerebral haemorrhage on CT"] --> B["Acute medical bundle"]
+    B --> C["Controlled BP lowering to systolic around 140 (INTERACT2); avoid over-aggressive reduction (ATACH-2)"]
+    C --> D{"On anticoagulant?"}
+    D -->|Warfarin| E["IV vitamin K + 4-factor PCC"]
+    D -->|Dabigatran| F["Idarucizumab"]
+    D -->|Factor Xa inhibitor| G["Andexanet alfa or PCC per protocol"]
+    D -->|No| H["Correct any other coagulopathy; do NOT routinely give platelets for antiplatelet-associated ICH (PATCH)"]
+    E --> I["Neurosurgical + neurocritical review; repeat CT if deteriorating (expansion is common)"]
+    F --> I
+    G --> I
+    H --> I
+    I --> J{"Location and situation?"}
+    J -->|"Cerebellar, over 3 cm or brainstem compression / hydrocephalus"| K["Surgical evacuation (EVD alone insufficient if brainstem compressed)"]
+    J -->|"Lobar, 30 to 80 ml, within 24 h"| L["Consider early minimally invasive evacuation (ENRICH)"]
+    J -->|"Severe deep supratentorial with mass effect"| M["Consider decompressive craniectomy (SWITCH)"]
+    J -->|"Deep basal ganglia / thalamic, standard"| N["Usually medical management; routine open craniotomy not beneficial (STICH / STICH II)"]
+    K --> O["Ongoing neurocritical care; investigate underlying cause (CTA/MRI for AVM, cavernoma, aneurysm, tumour, CVST)"]
+    L --> O
+    M --> O
+    N --> O
+          </div>
+          </figure>
+        </section>
+
+        <section id="references">
+          <h2>6. References (key trials referenced in the maps)</h2>
+          <ol class="reference-list">
+            <li><strong>Thrombectomy:</strong> HERMES (Lancet 2016); DAWN, DEFUSE-3 (NEJM 2018); RESCUE-Japan LIMIT (NEJM 2022); SELECT2, ANGEL-ASPECT (NEJM 2023); TENSION (Lancet 2023); ATTENTION, BAOCHE (NEJM 2022/2023).</li>
+            <li><strong>Hemicraniectomy:</strong> DECIMAL/DESTINY/HAMLET pooled (Lancet Neurology 2007); DESTINY II (NEJM 2014).</li>
+            <li><strong>ICH:</strong> INTERACT2 (NEJM 2013); ATACH-2 (NEJM 2016); PATCH (Lancet 2016); STICH (Lancet 2005); STICH II (Lancet 2013); MISTIE III (Lancet 2019); ENRICH (NEJM 2024); SWITCH (Lancet 2024).</li>
+            <li><strong>Sickle cell:</strong> STOP (NEJM 1998); STOP2 (NEJM 2005); TWiTCH (Lancet 2016); ASH 2020 cerebrovascular guidelines (Blood Advances 2020).</li>
+          </ol>
+          <p class="page-meta">These maps are teaching tools. Confirm every decision against current national/local guidelines and senior clinical input.</p>
+        </section>
+
+      </article>
+
+      <aside class="toc">
+        <details class="toc-inner" open>
+          <summary>On this page</summary>
+          <ol>
+            <li><a href="#young">Young / cryptogenic workup</a></li>
+            <li><a href="#sickle-cell">Sickle cell pathway</a></li>
+            <li><a href="#thrombectomy">Mechanical thrombectomy</a></li>
+            <li><a href="#hemicraniectomy">Malignant MCA / hemicraniectomy</a></li>
+            <li><a href="#ich">Intracerebral haemorrhage</a></li>
+            <li><a href="#references">References</a></li>
+          </ol>
+        </details>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-disclaimer">
+        <strong>Disclaimer:</strong> Stroke Hub is an educational resource for healthcare professionals and is not a substitute for professional guidelines, local protocols, clinical judgement, or up-to-date primary literature, and must not be used as the sole basis for patient care decisions. Content is maintained by its author and may not reflect the most recent guideline updates (last reviewed: July 2026). In a medical emergency, contact your local emergency services immediately.
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h5>Assessment &amp; diagnosis</h5>
+          <ul>
+            <li><a href="stroke-mimics.html">Stroke Mimics</a></li>
+            <li><a href="posterior-circulation.html">Posterior Circulation</a></li>
+            <li><a href="tia.html">TIA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Ischaemic &amp; haemorrhagic</h5>
+          <ul>
+            <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
+            <li><a href="carotid-stenosis.html">Carotid Stenosis</a></li>
+            <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke (ICH)</a></li>
+            <li><a href="subarachnoid-haemorrhage.html">Subarachnoid Haemorrhage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Venous &amp; special groups</h5>
+          <ul>
+            <li><a href="cvst.html">CVST</a></li>
+            <li><a href="stroke-in-pregnancy.html">Stroke in Pregnancy</a></li>
+            <li><a href="stroke-in-the-young.html">Stroke in the Young</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Prevention &amp; recovery</h5>
+          <ul>
+            <li><a href="atrial-fibrillation-anticoagulation.html">AF &amp; Anticoagulation</a></li>
+            <li><a href="rehabilitation-complications.html">Rehabilitation &amp; Complications</a></li>
+            <li><a href="stroke-algorithms.html">Stroke Algorithms</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="local-guidelines.html">Local Guidelines</a></li>
+            <li><a href="https://github.com/tanherzaheer/stroke-hub">Source on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Stroke Hub. Content for educational use.</span>
+        <span>Not a substitute for clinical judgement.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/mermaid.min.js"></script>
+  <script>
+    (function () {
+      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: dark ? "dark" : "default",
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: "basis" },
+        securityLevel: "strict"
+      });
+    })();
+  </script>
+</body>
+</html>
