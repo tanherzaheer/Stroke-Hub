@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroke Scores: ASPECTS &amp; mRS — Stroke Hub</title>
+  <meta name="description" content="Two core stroke scores: ASPECTS (Alberta Stroke Program Early CT Score) for quantifying early ischaemic change, with a region map and worked scoring; and the modified Rankin Scale (mRS) for functional outcome.">
+  <link rel="canonical" href="stroke-scores.html">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SH</span>
+        <span>
+          <span class="brand-text">Stroke Hub</span><br>
+          <span class="brand-tagline">Stroke medicine, explained</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        Menu
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
+          <li><a href="mechanical-thrombectomy.html">Thrombectomy</a></li>
+          <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
+          <li><a href="ich-score-volume.html">ICH Score</a></li>
+          <li><a href="cerebral-amyloid-angiopathy.html">Amyloid Angiopathy</a></li>
+          <li><a href="stroke-scores.html" aria-current="page">Stroke Scores</a></li>
+          <li><a href="tia.html">TIA</a></li>
+          <li><a href="local-guidelines.html">Local Guidelines</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="breadcrumbs"><a href="index.html">Home</a> / Stroke Scores</p>
+      <h1>Stroke Scores: ASPECTS &amp; mRS</h1>
+      <p class="page-subtitle">Two of the most frequently quoted scores in acute stroke care: ASPECTS, which quantifies early ischaemic change on the baseline CT, and the modified Rankin Scale, which grades functional outcome.</p>
+      <div class="tag-row">
+        <span class="tag">ASPECTS 0–10</span>
+        <span class="tag">mRS 0–6</span>
+        <span class="tag">Selection &amp; outcome</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="content-layout">
+      <article class="page-content">
+
+        <div class="box box-note">
+          <h4>How to use this page</h4>
+          <p style="margin-bottom:0;">A learning aid — not a substitute for local protocols or clinical judgement. These scores are companions to the <a href="ischaemic-stroke.html">Ischaemic Stroke</a> and <a href="mechanical-thrombectomy.html">Mechanical Thrombectomy</a> pages, where they feed directly into reperfusion decisions.</p>
+        </div>
+
+        <section id="aspects">
+          <h2>1. ASPECTS — Alberta Stroke Program Early CT Score</h2>
+          <p><strong>ASPECTS</strong> is a 10-point topographic score that quantifies early ischaemic change within the middle cerebral artery (MCA) territory on the baseline non-contrast CT. It offers a more reproducible alternative to the older "one-third of the MCA territory" rule.</p>
+
+          <div class="score-figure">
+            ASPECTS = <strong>10 − (number of affected regions)</strong>
+          </div>
+
+          <p>The MCA territory is divided into <strong>10 regions</strong>, assessed across two standardised axial CT levels:</p>
+          <ul>
+            <li><strong>Ganglionic level</strong> (at the basal ganglia and thalamus): caudate (C), lentiform nucleus (L), internal capsule (IC), insular ribbon (I), and cortical regions M1, M2, M3.</li>
+            <li><strong>Supraganglionic level</strong> (just above the basal ganglia): cortical regions M4, M5, M6.</li>
+          </ul>
+          <p>Start from 10 and subtract 1 point for <em>each</em> region showing early ischaemic change (parenchymal hypoattenuation or focal swelling). A normal CT scores 10; a score of 0 indicates diffuse ischaemia throughout the MCA territory.</p>
+
+          <figure class="diagram">
+            <div class="diagram-body">
+              <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ASPECTS region map across the ganglionic and supraganglionic CT levels">
+                <style>
+                  .brain{fill:#eef3f8;stroke:#38618c;stroke-width:1.5}
+                  .reg{fill:#dbe7f2;stroke:#38618c;stroke-width:1}
+                  .deep{fill:#cfe0d9;stroke:#2f6d5b;stroke-width:1}
+                  .rlbl{font-family:sans-serif;font-size:13px;fill:#14293f;font-weight:700;text-anchor:middle}
+                  .title{font-family:sans-serif;font-size:14px;fill:#14293f;font-weight:700;text-anchor:middle}
+                  .cap{font-family:sans-serif;font-size:11px;fill:#4a5b6b;text-anchor:middle}
+                </style>
+
+                <!-- Ganglionic level -->
+                <text x="170" y="24" class="title">Ganglionic level</text>
+                <ellipse cx="170" cy="150" rx="120" ry="100" class="brain"/>
+                <!-- deep structures -->
+                <rect x="120" y="110" width="40" height="26" rx="4" class="deep"/><text x="140" y="127" class="rlbl">C</text>
+                <rect x="120" y="142" width="40" height="30" rx="4" class="deep"/><text x="140" y="161" class="rlbl">L</text>
+                <rect x="164" y="128" width="26" height="42" rx="4" class="deep"/><text x="177" y="153" class="rlbl">IC</text>
+                <rect x="194" y="128" width="26" height="42" rx="4" class="deep"/><text x="207" y="153" class="rlbl">I</text>
+                <!-- cortical M1-M3 -->
+                <rect x="70" y="150" width="44" height="30" rx="4" class="reg"/><text x="92" y="169" class="rlbl">M1</text>
+                <rect x="70" y="98" width="44" height="30" rx="4" class="reg"/><text x="92" y="117" class="rlbl">M2</text>
+                <rect x="140" y="70" width="44" height="28" rx="4" class="reg"/><text x="162" y="88" class="rlbl">M3</text>
+
+                <!-- Supraganglionic level -->
+                <text x="470" y="24" class="title">Supraganglionic level</text>
+                <ellipse cx="470" cy="150" rx="120" ry="100" class="brain"/>
+                <rect x="378" y="140" width="52" height="34" rx="4" class="reg"/><text x="404" y="162" class="rlbl">M4</text>
+                <rect x="378" y="96" width="52" height="34" rx="4" class="reg"/><text x="404" y="118" class="rlbl">M5</text>
+                <rect x="446" y="72" width="52" height="30" rx="4" class="reg"/><text x="472" y="91" class="rlbl">M6</text>
+
+                <text x="320" y="288" class="cap">10 MCA regions: C, L, IC, I (deep) + M1–M6 (cortical). Subtract 1 for each region with early ischaemic change.</text>
+              </svg>
+            </div>
+            <figcaption>Schematic ASPECTS region map — a teaching aid, not an anatomical atlas. Deep structures shown in green, cortical regions in blue.</figcaption>
+          </figure>
+
+          <div class="box box-key-points">
+            <h4>Worked example</h4>
+            <p style="margin-bottom:0;">A baseline CT shows early hypoattenuation in the insular ribbon (I), the lentiform nucleus (L), and cortical region M2. Three regions are affected, so ASPECTS = 10 − 3 = <strong>7</strong>.</p>
+          </div>
+
+          <h3>Why ASPECTS matters</h3>
+          <ul>
+            <li><strong>ASPECTS 6–10:</strong> generally favourable for mechanical thrombectomy in the early window.</li>
+            <li><strong>ASPECTS 3–5 (large core):</strong> thrombectomy is still beneficial on the basis of the 2022–2024 large-core trials — a low ASPECTS is no longer an automatic exclusion.</li>
+            <li><strong>ASPECTS 0–2:</strong> very extensive established infarct; benefit uncertain — individualise.</li>
+          </ul>
+          <p>See the <a href="mechanical-thrombectomy.html">Mechanical Thrombectomy</a> page for how ASPECTS combines with time window, occlusion site, and perfusion mismatch.</p>
+        </section>
+
+        <section id="mrs">
+          <h2>2. Modified Rankin Scale (mRS)</h2>
+          <p>The <strong>modified Rankin Scale</strong> is the most widely used measure of global disability and dependence after stroke. It runs from 0 (no symptoms) to 6 (death) and is the primary functional outcome in most stroke trials. It is used both to describe <em>pre-morbid</em> function (a key part of thrombectomy candidacy) and to grade <em>outcome</em> at follow-up (commonly 90 days).</p>
+
+          <table>
+            <caption>The modified Rankin Scale (mRS)</caption>
+            <thead>
+              <tr><th>Grade</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td>No symptoms at all.</td></tr>
+              <tr><td>1</td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr>
+              <tr><td>2</td><td>Slight disability; unable to carry out all previous activities, but able to look after own affairs without assistance.</td></tr>
+              <tr><td>3</td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr>
+              <tr><td>4</td><td>Moderately severe disability; unable to walk and attend to own bodily needs without assistance.</td></tr>
+              <tr><td>5</td><td>Severe disability; bedridden, incontinent, and requiring constant nursing care and attention.</td></tr>
+              <tr><td>6</td><td>Dead.</td></tr>
+            </tbody>
+          </table>
+
+          <div class="box box-key-points">
+            <h4>Reading mRS in practice</h4>
+            <ul style="margin-bottom:0;">
+              <li><strong>mRS 0–2</strong> is generally taken as "functional independence" — the usual threshold for a good outcome and for pre-morbid thrombectomy eligibility.</li>
+              <li><strong>mRS 3</strong> is the walking/dependence boundary — able to walk but needs some help.</li>
+              <li>A <strong>shift analysis</strong> across the whole scale (not just a single cut-point) is now the standard way trials report treatment effect.</li>
+            </ul>
+          </div>
+          <p>Pre-morbid mRS is one of the four pillars of thrombectomy selection — see <a href="mechanical-thrombectomy.html">Mechanical Thrombectomy</a>.</p>
+        </section>
+
+        <section id="references">
+          <h2>3. References (selected)</h2>
+          <ol class="reference-list">
+            <li>Barber PA, et al. Validity and reliability of a quantitative computed tomography score in predicting outcome of hyperacute stroke (ASPECTS). <em>Lancet</em>. 2000.</li>
+            <li>Pexman JHW, et al. Use of the Alberta Stroke Program Early CT Score (ASPECTS) for assessing CT scans in acute stroke. <em>AJNR</em>. 2001.</li>
+            <li>van Swieten JC, et al. Interobserver agreement for the assessment of handicap in stroke patients (modified Rankin Scale). <em>Stroke</em>. 1988.</li>
+            <li>Rankin J. Cerebral vascular accidents in patients over the age of 60. <em>Scott Med J</em>. 1957.</li>
+          </ol>
+          <p class="page-meta">This page is a teaching summary, not a clinical protocol. Always verify against current guidelines and your institution's stroke pathway before applying to patient care.</p>
+        </section>
+
+      </article>
+
+      <aside class="toc">
+        <details class="toc-inner" open>
+          <summary>On this page</summary>
+          <ol>
+            <li><a href="#aspects">ASPECTS</a></li>
+            <li><a href="#mrs">Modified Rankin Scale (mRS)</a></li>
+            <li><a href="#references">References</a></li>
+          </ol>
+        </details>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-disclaimer">
+        <strong>Disclaimer:</strong> Stroke Hub is provided for educational purposes only and is intended for healthcare professionals. It is not a substitute for clinical judgement, local protocols, or up-to-date primary literature, and must not be used as the sole basis for patient care decisions. In a medical emergency, contact your local emergency services immediately.
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h5>Topics</h5>
+          <ul>
+            <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
+            <li><a href="mechanical-thrombectomy.html">Mechanical Thrombectomy</a></li>
+            <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
+            <li><a href="ich-score-volume.html">ICH Score &amp; Volume</a></li>
+            <li><a href="cerebral-amyloid-angiopathy.html">Cerebral Amyloid Angiopathy</a></li>
+            <li><a href="stroke-scores.html">Stroke Scores (ASPECTS &amp; mRS)</a></li>
+            <li><a href="tia.html">TIA</a></li>
+            <li><a href="local-guidelines.html">Local Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/tanherzaheer/stroke-hub">Source on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Stroke Hub. Content for educational use.</span>
+        <span>Not a substitute for clinical judgement.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

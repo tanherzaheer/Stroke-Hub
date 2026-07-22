@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICH Score &amp; Haematoma Volume (ABC/2) — Stroke Hub</title>
+  <meta name="description" content="Two practical tools for intracerebral haemorrhage: the ABC/2 method for estimating haematoma volume and the ICH Score for early 30-day mortality risk stratification, with a worked example and decision flowchart.">
+  <link rel="canonical" href="ich-score-volume.html">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SH</span>
+        <span>
+          <span class="brand-text">Stroke Hub</span><br>
+          <span class="brand-tagline">Stroke medicine, explained</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        Menu
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
+          <li><a href="mechanical-thrombectomy.html">Thrombectomy</a></li>
+          <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
+          <li><a href="ich-score-volume.html" aria-current="page">ICH Score</a></li>
+          <li><a href="cerebral-amyloid-angiopathy.html">Amyloid Angiopathy</a></li>
+          <li><a href="stroke-scores.html">Stroke Scores</a></li>
+          <li><a href="tia.html">TIA</a></li>
+          <li><a href="local-guidelines.html">Local Guidelines</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="breadcrumbs"><a href="index.html">Home</a> / ICH Score &amp; Volume</p>
+      <h1>ICH Score &amp; Haematoma Volume (ABC/2)</h1>
+      <p class="page-subtitle">Two practical tools for intracerebral haemorrhage (ICH): the ICH Score for early prognosis, and the ABC/2 method for estimating haematoma volume.</p>
+      <div class="tag-row">
+        <span class="tag">Prognostic score</span>
+        <span class="tag">Volume estimation</span>
+        <span class="tag">Intracerebral haemorrhage</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="content-layout">
+      <article class="page-content">
+
+        <div class="box box-red-flag">
+          <h4>Critical caveat</h4>
+          <p style="margin-bottom:0;">Prognostic scores must never be used in isolation to justify early withdrawal of care, as this risks a self-fulfilling prophecy. This is a learning aid — not a substitute for local protocols or clinical judgement.</p>
+        </div>
+
+        <section id="volume">
+          <h2>1. Estimating haematoma volume — the ABC/2 method</h2>
+          <p>Haematoma volume is one of the strongest predictors of outcome in ICH and feeds directly into the ICH Score. The ABC/2 formula gives a rapid bedside estimate of the volume of an ellipsoid haematoma from the CT.</p>
+
+          <div class="score-figure">
+            Volume (mL) = <strong>(A × B × C) / 2</strong>
+          </div>
+
+          <ul>
+            <li><strong>A</strong> = the greatest diameter of the haematoma (cm) on the CT slice where it is largest.</li>
+            <li><strong>B</strong> = the diameter perpendicular to A (cm) on that same slice.</li>
+            <li><strong>C</strong> = the approximate vertical extent (cm) = the number of slices on which the haematoma is seen × the slice thickness (cm). A common refinement counts each slice by how much of the haematoma it contains — full slices count as 1, partial slices as 0.5.</li>
+          </ul>
+          <p>All three measurements are in centimetres, giving a volume in millilitres.</p>
+
+          <div class="box box-key-points">
+            <h4>Worked example</h4>
+            <p style="margin-bottom:0;">A haematoma measures A = 5 cm and B = 4 cm on its largest slice, and appears on 8 slices of 0.5 cm thickness, so C = 8 × 0.5 = 4 cm.<br>
+            Volume = (5 × 4 × 4) / 2 = <strong>40 mL</strong>.</p>
+          </div>
+
+          <figure class="diagram">
+            <div class="diagram-body">
+              <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC over 2 haematoma volume schematic">
+                <style>
+                  .brain{fill:#eef3f8;stroke:#38618c;stroke-width:1.5}
+                  .bleed{fill:#c0392b;opacity:0.85}
+                  .axis{stroke:#14293f;stroke-width:2}
+                  .lbl{font-family:sans-serif;font-size:16px;fill:#14293f;font-weight:700;text-anchor:middle}
+                  .cap{font-family:sans-serif;font-size:12px;fill:#4a5b6b;text-anchor:middle}
+                  .dash{stroke:#14293f;stroke-width:1.5;stroke-dasharray:5 4}
+                </style>
+                <!-- Single-slice view: A and B -->
+                <text x="165" y="24" class="lbl">Largest slice</text>
+                <ellipse cx="165" cy="140" rx="120" ry="95" class="brain"/>
+                <ellipse cx="165" cy="140" rx="55" ry="38" class="bleed"/>
+                <line x1="110" y1="140" x2="220" y2="140" class="axis"/>
+                <text x="165" y="132" class="lbl" fill="#ffffff">A</text>
+                <line x1="165" y1="102" x2="165" y2="178" class="axis"/>
+                <text x="192" y="165" class="lbl" fill="#ffffff">B</text>
+                <!-- Slice stack: C -->
+                <text x="480" y="24" class="lbl">Through the slices</text>
+                <g>
+                  <rect x="430" y="60" width="100" height="16" class="brain"/>
+                  <rect x="430" y="80" width="100" height="16" class="brain"/>
+                  <rect x="430" y="100" width="100" height="16" class="brain"/>
+                  <rect x="430" y="120" width="100" height="16" class="brain"/>
+                  <rect x="430" y="140" width="100" height="16" class="brain"/>
+                  <rect x="430" y="160" width="100" height="16" class="brain"/>
+                  <ellipse cx="480" cy="118" rx="26" ry="52" class="bleed"/>
+                </g>
+                <line x1="560" y1="66" x2="560" y2="170" class="dash"/>
+                <text x="585" y="122" class="lbl">C</text>
+                <text x="320" y="248" class="cap">Volume = (A x B x C) / 2. C = number of slices with haemorrhage x slice thickness.</text>
+              </svg>
+            </div>
+            <figcaption>Schematic of the ABC/2 measurement: A and B on the largest slice, C through the slice stack.</figcaption>
+          </figure>
+        </section>
+
+        <section id="ich-score">
+          <h2>2. The ICH Score</h2>
+          <p>The ICH Score (Hemphill, 2001) is a simple, validated tool for 30-day mortality risk stratification, using five variables scored at presentation.</p>
+
+          <table>
+            <caption>The ICH Score components (total 0–6)</caption>
+            <thead>
+              <tr><th>Component</th><th>Finding</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+              <tr><td rowspan="3">Glasgow Coma Scale</td><td>3–4</td><td>2</td></tr>
+              <tr><td>5–12</td><td>1</td></tr>
+              <tr><td>13–15</td><td>0</td></tr>
+              <tr><td rowspan="2">ICH volume (ABC/2)</td><td>≥ 30 mL</td><td>1</td></tr>
+              <tr><td>&lt; 30 mL</td><td>0</td></tr>
+              <tr><td rowspan="2">Intraventricular haemorrhage</td><td>Present</td><td>1</td></tr>
+              <tr><td>Absent</td><td>0</td></tr>
+              <tr><td rowspan="2">Infratentorial origin</td><td>Yes</td><td>1</td></tr>
+              <tr><td>No</td><td>0</td></tr>
+              <tr><td rowspan="2">Age</td><td>≥ 80 years</td><td>1</td></tr>
+              <tr><td>&lt; 80 years</td><td>0</td></tr>
+            </tbody>
+          </table>
+
+          <p><strong>Total = 0 to 6.</strong> A higher score corresponds to higher 30-day mortality; in the original cohort, mortality rose steeply with each point (roughly 0% at a score of 0, rising to very high mortality at scores of 5–6).</p>
+
+          <div class="box box-red-flag">
+            <h4>Important caveat</h4>
+            <p style="margin-bottom:0;">The ICH Score is a population-level prognostic tool. Early aggressive-care limitation based on the score can create a self-fulfilling prophecy. Guidelines advise against early DNACPR/withdrawal decisions in the first 24–48 hours based on prognostic scores alone — give full active care and reassess.</p>
+          </div>
+        </section>
+
+        <section id="together">
+          <h2>3. How these fit together</h2>
+          <figure class="diagram">
+            <pre class="mermaid">
+flowchart TD
+    A["Spontaneous ICH confirmed on CT"] --> B["Measure haematoma volume with ABC/2"]
+    B --> C["Score the ICH Score: GCS, volume 30 mL or more, IVH, infratentorial, age 80 or more"]
+    C --> D["Use for risk communication and monitoring intensity"]
+    D --> E["Do NOT limit care early on the score alone - reassess with full active treatment (avoid self-fulfilling prophecy)"]
+    B --> F["Volume also guides surgical discussion - see Haemorrhagic Stroke page (ENRICH, cerebellar bleeds)"]
+            </pre>
+            <figcaption>From CT confirmation through volume, scoring, and the caution against early care limitation.</figcaption>
+          </figure>
+          <p>Volume also guides the surgical discussion — see the <a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a> page. Related bleeding causes are covered on the <a href="cerebral-amyloid-angiopathy.html">Cerebral Amyloid Angiopathy</a> page.</p>
+        </section>
+
+        <section id="references">
+          <h2>4. References (selected)</h2>
+          <ol class="reference-list">
+            <li>Hemphill JC 3rd, et al. The ICH Score: a simple, reliable grading scale for intracerebral haemorrhage. <em>Stroke</em>. 2001.</li>
+            <li>Kothari RU, et al. The ABC/2 method for ICH volume estimation. <em>Stroke</em>. 1996.</li>
+            <li>AHA/ASA guidelines for the management of spontaneous ICH (guidance against early care limitation based on prognostic scores).</li>
+          </ol>
+          <p class="page-meta">Verify all recommendations against current UK/local guidance before clinical use. This page is a teaching summary, not a clinical protocol.</p>
+        </section>
+
+      </article>
+
+      <aside class="toc">
+        <details class="toc-inner" open>
+          <summary>On this page</summary>
+          <ol>
+            <li><a href="#volume">Haematoma volume (ABC/2)</a></li>
+            <li><a href="#ich-score">The ICH Score</a></li>
+            <li><a href="#together">How these fit together</a></li>
+            <li><a href="#references">References</a></li>
+          </ol>
+        </details>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-disclaimer">
+        <strong>Disclaimer:</strong> Stroke Hub is provided for educational purposes only and is intended for healthcare professionals. It is not a substitute for clinical judgement, local protocols, or up-to-date primary literature, and must not be used as the sole basis for patient care decisions. In a medical emergency, contact your local emergency services immediately.
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h5>Topics</h5>
+          <ul>
+            <li><a href="ischaemic-stroke.html">Ischaemic Stroke</a></li>
+            <li><a href="mechanical-thrombectomy.html">Mechanical Thrombectomy</a></li>
+            <li><a href="haemorrhagic-stroke.html">Haemorrhagic Stroke</a></li>
+            <li><a href="ich-score-volume.html">ICH Score &amp; Volume</a></li>
+            <li><a href="cerebral-amyloid-angiopathy.html">Cerebral Amyloid Angiopathy</a></li>
+            <li><a href="stroke-scores.html">Stroke Scores (ASPECTS &amp; mRS)</a></li>
+            <li><a href="tia.html">TIA</a></li>
+            <li><a href="local-guidelines.html">Local Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/tanherzaheer/stroke-hub">Source on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Stroke Hub. Content for educational use.</span>
+        <span>Not a substitute for clinical judgement.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({
+        startOnLoad: true,
+        securityLevel: "loose",
+        theme: "base",
+        themeVariables: {
+          primaryColor: "#e8f1f6",
+          primaryBorderColor: "#0b4f6c",
+          primaryTextColor: "#1e2a32",
+          secondaryColor: "#f5f8fa",
+          tertiaryColor: "#ffffff",
+          lineColor: "#57636c",
+          fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        }
+      });
+    }
+  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
