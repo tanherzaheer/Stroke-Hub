@@ -598,6 +598,76 @@ li {
 }
 
 /* =========================
+   Diagrams (Mermaid + inline SVG/HTML)
+   ========================= */
+
+figure.diagram {
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+figure.diagram > .diagram-body {
+  min-width: 0;
+  text-align: center;
+}
+
+figure.diagram svg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+figure.diagram figcaption {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 0.85rem;
+  text-align: center;
+}
+
+/* Mermaid source blocks: hidden styling until rendered, then centred */
+pre.mermaid {
+  background: transparent;
+  border: none;
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+pre.mermaid[data-processed] {
+  color: inherit;
+}
+
+pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Simple scoring readout used on the score pages */
+.score-figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: var(--color-primary-light);
+  border: 1px solid #bcd8e6;
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  margin: 1.25rem 0;
+  font-family: var(--font-heading);
+  color: var(--color-primary-dark);
+}
+
+.score-figure strong {
+  font-size: 1.35rem;
+}
+
+/* =========================
    Placeholder / guidelines page
    ========================= */
 
@@ -753,8 +823,10 @@ li {
 
   .main-nav ul {
     display: flex;
-    gap: 1.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
     padding: 0;
+    justify-content: flex-end;
   }
 
   .main-nav a {
