@@ -1,8 +1,8 @@
 # Stroke Hub
 
-Stroke Hub is a static educational website about stroke medicine for healthcare professionals — medical students, doctors, nurses, and allied health staff. It covers ischaemic stroke, haemorrhagic stroke, and TIA, with a placeholder page for local/departmental guidelines.
+Stroke Hub is a static educational website about stroke medicine for healthcare professionals — medical students, doctors, nurses, and allied health staff. It covers ischaemic stroke, haemorrhagic stroke, and TIA, along with focused reference pages on mechanical thrombectomy, stroke scores (ASPECTS and mRS), the ICH Score and haematoma volume, and cerebral amyloid angiopathy, plus a placeholder page for local/departmental guidelines.
 
-Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no frameworks, no build step.
+Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no frameworks, no build step. Diagrams are rendered with [Mermaid](https://mermaid.js.org/) (loaded from a CDN on pages that use flowcharts) and with inline SVG for schematic illustrations.
 
 **Live site:** once GitHub Pages is enabled (see below), the site will be available at `https://<your-username>.github.io/<repo-name>/`.
 
@@ -10,12 +10,16 @@ Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no fram
 
 ```
 .
-├── index.html                 # Homepage
-├── ischaemic-stroke.html      # Ischaemic stroke topic page
-├── haemorrhagic-stroke.html   # Haemorrhagic stroke topic page
-├── tia.html                   # TIA topic page
-├── local-guidelines.html      # Placeholder for local/trust-specific protocols
-├── 404.html                   # Custom not-found page
+├── index.html                        # Homepage
+├── ischaemic-stroke.html             # Ischaemic stroke topic page
+├── haemorrhagic-stroke.html          # Haemorrhagic stroke topic page
+├── tia.html                          # TIA topic page
+├── mechanical-thrombectomy.html      # Thrombectomy decision pathway (Mermaid flowcharts)
+├── stroke-scores.html                # ASPECTS & modified Rankin Scale (inline SVG diagrams)
+├── ich-score.html                    # ICH Score & ABC/2 volume (SVG + Mermaid flowchart)
+├── cerebral-amyloid-angiopathy.html  # CAA & causes of lobar haemorrhage (Mermaid flowchart)
+├── local-guidelines.html             # Placeholder for local/trust-specific protocols
+├── 404.html                          # Custom not-found page
 ├── assets/
 │   ├── css/style.css          # Shared stylesheet
 │   └── js/main.js             # Shared JS (mobile nav, back-to-top, TOC scrollspy)
