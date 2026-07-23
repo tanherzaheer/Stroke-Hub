@@ -668,6 +668,77 @@ pre.mermaid svg {
 }
 
 /* =========================
+   Downloadable document lists (Local Guidelines)
+   ========================= */
+
+.doc-list {
+  list-style: none;
+  margin: 0.75rem 0 1.75rem;
+  padding: 0;
+}
+
+.doc-list li {
+  margin: 0 0 0.6rem;
+}
+
+.doc-link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  background: var(--color-bg);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.doc-link:hover,
+.doc-link:focus {
+  box-shadow: 0 3px 12px rgba(11, 79, 108, 0.1);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+  transform: translateY(-1px);
+}
+
+.doc-type {
+  flex-shrink: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.doc-body {
+  min-width: 0;
+}
+
+.doc-title {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.doc-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.1rem;
+}
+
+.doc-group {
+  margin-top: 1.75rem;
+}
+
+/* =========================
    Placeholder / guidelines page
    ========================= */
 
